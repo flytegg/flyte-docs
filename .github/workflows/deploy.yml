@@ -37,31 +37,22 @@ jobs:
           path: artifacts/${{ env.ARTIFACT }}
           retention-days: 7
 
-      - name: List Files
-        run: ls -R
-
       - name: Extract Files
-        run: 7z x artifacts/${{ env.ARTIFACT }}
+        run: 7z x artifacts/${{ env.ARTIFACT }} -ocf-pages
 
-      - name: List Files
-        run: ls -R
-
-#      - name: Publish to Cloudflare Pages
-#        uses: cloudflare/pages-action@v1
-#        with:
-#          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-#          accountId: YOUR_ACCOUNT_ID
-#          projectName: flyte-docs
-#          directory: YOUR_BUILD_OUTPUT_DIRECTORY
-#          # Optional: Enable this if you want to have GitHub Deployments triggered
-#          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-#          # Optional: Switch what branch you are publishing to.
-#          # By default this will be the branch which triggered this workflow
-#          branch: main
-#          # Optional: Change the working directory
-#          workingDirectory: artifacts
-#          # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
-#          wranglerVersion: '3'
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: flyte-docs
+          directory: cf-pages
+          # Optional: Enable this if you want to have GitHub Deployments triggered
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          # Optional: Change the working directory
+          workingDirectory: cf-pages
+          # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
+          wranglerVersion: '3'
 
 
 
