@@ -4,7 +4,7 @@
 
 <instance-profile id="flyte"
                  name="Flyte Documentation"
-                 start-page="api-docs.md">
+                 start-page="Home.md">
 
     <toc-element topic="Home.md"/>
     <toc-element topic="flyte-api.md">
