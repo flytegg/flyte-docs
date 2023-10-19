@@ -41,7 +41,7 @@ jobs:
         run: ls -R
 
       - name: Extract Files
-        run: 7z x artifactions/${{ env.ARTIFACT }}
+        run: 7z x artifacts/${{ env.ARTIFACT }}
 
       - name: List Files
         run: ls -R
