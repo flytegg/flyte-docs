@@ -40,6 +40,10 @@ jobs:
       - name: Extract Files
         run: 7z x artifacts/${{ env.ARTIFACT }} -ocf-pages
 
+      - name: List Files
+        run: ls -R
+
+
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
@@ -47,34 +51,5 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: flyte-docs
           directory: cf-pages
-          # Optional: Enable this if you want to have GitHub Deployments triggered
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          # Optional: Change the working directory
-          workingDirectory: cf-pages
           # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
           wranglerVersion: '3'
-
-
-
-
-
-#  deploy:
-#    runs-on: ubuntu-latest
-#    permissions:
-#      contents: read
-#      deployments: write
-#    name: Deploy to Cloudflare Pages
-#    steps:
-#      - name: Checkout
-#        uses: actions/checkout@v3
-#      # Run your project's build step
-#      # - name: Build
-#      #   run: npm install && npm run build
-#      - name: Publish
-#        uses: cloudflare/pages-action@1
-#        with:
-#          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-#          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-#          projectName: YOUR_PROJECT_NAME # e.g. 'my-project'
-#          directory: YOUR_DIRECTORY_OF_STATIC_ASSETS # e.g. 'dist'
-#          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
