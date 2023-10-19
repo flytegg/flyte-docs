@@ -40,6 +40,12 @@ jobs:
       - name: List Files
         run: ls -R
 
+      - name: Extract Files
+        run: 7z x artifactions/${{ env.ARTIFACT }}
+
+      - name: List Files
+        run: ls -R
+
 #      - name: Publish to Cloudflare Pages
 #        uses: cloudflare/pages-action@v1
 #        with:
