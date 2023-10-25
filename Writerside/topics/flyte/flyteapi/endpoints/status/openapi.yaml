@@ -17,6 +17,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/StatusCheck'
+        '401':
+          description: Unauthorized
 
     post:
       summary: Update status of a Flyte service.
@@ -31,6 +33,8 @@ paths:
       responses:
         '201':
           description: Created
+        '401':
+          description: Unauthorized
 
 components:
   schemas:
@@ -54,12 +58,20 @@ components:
           items:
             type: object
             properties:
-                id:
-                  type: string
-                name:
-                    type: string
-                healthy:
-                    type: boolean
+              id:
+                type: string
+              name:
+                type: string
+              healthy:
+                type: boolean
+
+    UnauthorizedError:
+      type: object
+      properties:
+        message:
+          type: string
+        documentation_url:
+          type: string
 
 
   securitySchemes:
@@ -69,6 +81,6 @@ components:
       bearerFormat: JWT
 
 security:
-  - bearerAuth: []
+  - bearerAuth: [ ]
 
 
