@@ -3,7 +3,7 @@
 <!--Specify request and response samples manually. 
 You can add the sample inside the <sample> element or include it from a file using the 'src' attribute.-->
 
-<api-endpoint openapi-path="./../openapi.yaml" endpoint="/user" method="post">
+<api-endpoint openapi-path="../../openapi.yaml" endpoint="/v1/users/{user-id}" method="post">
     <request>
         <sample src="examples.json" include-lines="1-10"/>
     </request>

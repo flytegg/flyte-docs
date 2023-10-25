@@ -2,7 +2,7 @@
 
 <!--If an operation has several responses, you can add samples for each of them separately.-->
 
-<api-endpoint openapi-path="./../openapi.yaml" endpoint="/user/createWithList" method="post">
+<api-endpoint openapi-path="../../openapi.yaml" endpoint="/user/createWithList" method="post">
     <response type="200">
         <sample>
         {

@@ -1,54 +1,39 @@
-# Flyte Documentation
+# Flyte Documentation Home
 
 <!--Writerside adds this topic when you create a new documentation project.
 You can use it as a sandbox to play with Writerside features, and remove it from the TOC when you don't need it anymore.-->
 
-## Add new topics
-You can create empty topics, or choose a template for different types of content that contains some boilerplate structure to help you get started:
+## Start By Clicking A Topic On The Left
+You will find all the topics in the left sidebar. These topics are organized in a tree structure. Click on a topic to see its subtopics.
 
-## Write content
-%product% supports two types of markup: Markdown and XML.
-When you create a new help article, you can choose between two topic types, but this doesn't mean you have to stick to a single format.
-You can author content in Markdown and extend it with semantic attributes or inject entire XML elements.
 
-## Inject XML
-For example, this is how you inject a procedure:
+## Major Changes
+## October 2023
 
-## Add interactive elements
+<table>
+<tr>
+<td>Topic</td>
+<td>Changes</td>
+</tr>
+<tr>
+<td>Documentation Release</td>
+<td>Documentation has been deployed publicly</td>
+</tr>
+<tr>
+<td><a href="Get-Flyte-Status.md">Flyte <code>/status</code> Endpoints Added</a></td>
+<td>
+<list>
+<li>added the <code>status</code> field</li>
+</list>
+</td>
+</tr>
+</table>
 
-### Tabs
-To add switchable content, you can make use of tabs (inject them by starting to type `tab` on a new line):
-
-### Collapsible blocks
-Apart from injecting entire XML elements, you can use attributes to configure the behavior of certain elements.
-For example, you can collapse a chapter that contains non-essential information:
-
-#### Supplementary info {collapsible="true"}
-Content under such header will be collapsed by default, but you can modify the behavior by adding the following attribute:
-`default-state="expanded"`
-
-### Convert selection to XML
-If you need to extend an element with more functions, you can convert selected content from Markdown to semantic markup.
-For example, if you want to merge cells in a table, it's much easier to convert it to XML than do this in Markdown.
-Position the caret anywhere in the table and press <shortcut>Alt+Enter</shortcut>:
-
-## Feedback and support
-Please report any issues, usability improvements, or feature requests to our
-<a href="https://youtrack.jetbrains.com/newIssue?project=WRS">YouTrack project</a>
-(you will need to register).
-
-You are welcome to join our
-<a href="https://join.slack.com/t/writerside/shared_invite/zt-1hnvxnl0z-Nc6RWXTppRI2Oc566vumYw">public Slack workspace</a>.
-Before you do, please read our [Code of conduct](https://plugins.jetbrains.com/plugin/20158-writerside/docs/writerside-code-of-conduct.html).
-We assume that you’ve read and acknowledged it before joining.
-
-You can also always send an email to [writerside@jetbrains.com](mailto:writerside@jetbrains.com).
 
 <seealso>
-    <category ref="wrs">
-        <a href="https://plugins.jetbrains.com/plugin/20158-writerside/docs/markup-reference.html">Markup reference</a>
-        <a href="https://plugins.jetbrains.com/plugin/20158-writerside/docs/manage-table-of-contents.html">Reorder topics in the TOC</a>
-        <a href="https://plugins.jetbrains.com/plugin/20158-writerside/docs/local-build.html">Build and publish</a>
-        <a href="https://plugins.jetbrains.com/plugin/20158-writerside/docs/configure-search.html">Configure Search</a>
+    <category ref="home">
+        <a href="https://flyte.gg">Flyte GitHub Page</a>
+        <a href="https://github.com/flytegg/flyte-docs">Documentation GitHub Repository</a>
+        <a href="mailto:hello@flyte.gg">Send An Email</a>
     </category>
 </seealso>

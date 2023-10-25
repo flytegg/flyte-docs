@@ -1,0 +1,74 @@
+openapi: 3.0.1
+info:
+  title: Flyte API
+  description: API description in Markdown.
+  version: 0.0.1
+servers:
+  - url: 'https://api.flyte.gg/v1'
+paths:
+  /status:
+    get:
+      summary: View status of all Flyte services.
+      description: View status of all Flyte services in one endpoint.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StatusCheck'
+
+    post:
+      summary: Update status of a Flyte service.
+      description: Update status of a Flyte service.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IndividualStatus'
+
+      responses:
+        '201':
+          description: Created
+
+components:
+  schemas:
+    IndividualStatus:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        healthy:
+          type: boolean
+
+    StatusCheck:
+      type: object
+      properties:
+        healthy:
+          type: boolean
+        dependencies:
+          type: array
+          items:
+            type: object
+            properties:
+                id:
+                  type: string
+                name:
+                    type: string
+                healthy:
+                    type: boolean
+
+
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+security:
+  - bearerAuth: []
+
+

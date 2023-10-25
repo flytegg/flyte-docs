@@ -359,7 +359,7 @@ paths:
         - store
       summary: Find purchase order by ID
       x-swagger-router-controller: OrderController
-      description: For valid response try integer IDs with value less than 5 or > 10. Other values
+      description: For valid response try integer IDs with value less than 5 or > 10. other values
         will generate exceptions.
       operationId: getOrderById
       parameters:
