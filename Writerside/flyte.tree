@@ -8,11 +8,19 @@
 
     <toc-element topic="Home.md"/>
     <toc-element topic="Flyte-API.md">
-        <toc-element topic="Guilds-Endpoint.md"/>
-        <toc-element topic="Users-Endpoint.md"/>
-        <toc-element toc-title="Status">
+
+        <toc-element toc-title="Guilds Endpoint">
+
+        </toc-element>
+
+        <toc-element toc-title="Users Endpoint">
+
+        </toc-element>
+
+        <toc-element toc-title="Status Endpoints">
             <toc-element topic="Get-Flyte-Status.md"/>
         </toc-element>
+
     </toc-element>
 
     <toc-element topic="Other-Projects.md">
