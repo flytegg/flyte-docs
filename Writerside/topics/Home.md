@@ -20,7 +20,7 @@ You will find all the topics in the left sidebar. These topics are organized in 
 <td>Documentation has been deployed publicly</td>
 </tr>
 <tr>
-<td><a href="Get-Flyte-Status.md">Flyte <code>/status</code> Endpoints Added</a></td>
+<td><a href="Get-Flyte-Services-Status.md">Flyte <code>/status</code> Endpoints Added</a></td>
 <td>
 <list>
 <li>added the <code>status</code> field</li>

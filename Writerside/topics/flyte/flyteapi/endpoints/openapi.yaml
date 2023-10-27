@@ -1,0 +1,154 @@
+openapi: 3.0.1
+info:
+  title: Flyte API
+  description: API description in Markdown.
+  version: 0.0.1
+servers:
+  - url: 'https://api.flyte.gg/v1'
+paths:
+  /users/{user-id}:
+    get:
+      summary: Get user by ID
+      description: Get user by ID
+      parameters:
+        - name: user-id
+          in: path
+          description: ID of user to return
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '401':
+          description: Unauthorized
+    post:
+      summary: Update user
+      description: Update user
+      parameters:
+        - name: user-id
+          in: path
+          description: ID of user to return
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '201':
+          description: Created
+        '401':
+          description: Unauthorized
+    patch:
+      summary: Update user
+      description: Update user
+      parameters:
+        - name: user-id
+          in: path
+          description: ID of user to return
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '202':
+          description: Accepted
+        '401':
+          description: Unauthorized
+    delete:
+      summary: Delete user
+      description: Delete user
+      parameters:
+        - name: user-id
+          in: path
+          description: ID of user to return
+          required: true
+          schema:
+            type: string
+      responses:
+        '202':
+          description: Accepted
+        '401':
+          description: Unauthorized
+
+  /status:
+    get:
+      summary: View status of all Flyte services.
+      description: View status of all Flyte services in one endpoint.
+      responses:
+        '200':
+          description: OK (Returns Array of Objects)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StatusCheck'
+        '401':
+          description: Unauthorized
+
+    post:
+      summary: Update status of a Flyte service.
+      description: Update status of a Flyte service.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StatusCheck'
+
+      responses:
+        '201':
+          description: Created
+        '401':
+          description: Unauthorized
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: number
+        role:
+          type: string
+        accountType:
+          type: string
+        involvedProjects:
+          type: object # HashMap<String, String>
+          additionalProperties:
+            type: string
+
+
+    StatusCheck:
+      type: array
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        healthy:
+          type: boolean
+
+
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+security:
+  - bearerAuth: [ ]
+
+
