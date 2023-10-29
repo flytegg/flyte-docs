@@ -3,7 +3,7 @@
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <variables>
-        <primary-color>#F37BDA</primary-color>
+        <primary-color>ruby</primary-color>
         <header-logo>FlyteLogo.svg</header-logo>
     </variables>
     <build-profile instance="adoc">

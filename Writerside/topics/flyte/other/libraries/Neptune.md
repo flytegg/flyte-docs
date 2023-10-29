@@ -100,7 +100,7 @@ Maven
 ```
 
 Gradle (Kotlin DSL)
-```kt
+```Kotlin
 maven {
     name = "flyteRepositoryReleases"
     url = uri("https://repo.flyte.gg/releases")
