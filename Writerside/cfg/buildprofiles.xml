@@ -17,6 +17,12 @@
         </variables>
     </build-profile>
     <footer>
+        <social type="twitter" href="https://x.com/flytelabs"/>
+        <social type="email" href="mailto:hello@flyte.gg"/>
+
+        <link href="https://flyte.gg">Flyte Home</link>
+        <link href="https://github.com/flytegg/flyte-docs">Contribute To The Docs</link>
+
         <copyright>Flyte Labs Ltd. 2023</copyright>
     </footer>
 
