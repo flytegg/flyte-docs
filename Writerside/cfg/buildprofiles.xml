@@ -4,7 +4,7 @@
 
     <variables>
         <primary-color>#F37BDA</primary-color>
-        <header-logo>FlyteLogo.png</header-logo>
+        <header-logo>FlyteLogo.svg</header-logo>
     </variables>
     <build-profile instance="adoc">
         <variables>
@@ -16,5 +16,8 @@
             <noindex-content>true</noindex-content>
         </variables>
     </build-profile>
+    <footer>
+        <copyright>Flyte Labs Ltd. 2023</copyright>
+    </footer>
 
 </buildprofiles>
