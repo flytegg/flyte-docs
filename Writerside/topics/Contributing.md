@@ -58,7 +58,7 @@ To contribute to our projects, please follow these steps:
 2. Create a new branch for your feature:
 
 ```Bash
-git checkout -b feature/your-feature
+git checkout -b scope/your-feature
 ```
 
 3. Make changes and write your code.
