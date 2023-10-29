@@ -15,6 +15,7 @@ env:
   ARTIFACT: webHelpFLYTE2-all.zip
   # Docker image version
   DOCKER_VERSION: 232.10165.1
+  # Custom primary color for pages
 
 jobs:
   build:
@@ -30,15 +31,13 @@ jobs:
           artifact: ${{ env.ARTIFACT }}
           docker-version: ${{ env.DOCKER_VERSION }}
 
-#      - name: Upload artifact
-#        uses: actions/upload-artifact@v3
-#        with:
-#          name: artifact
-#          path: artifacts/${{ env.ARTIFACT }}
-#          retention-days: 7
-
       - name: Extract Files
         run: 7z x artifacts/${{ env.ARTIFACT }} -ocf-pages
+
+      - name: Replace Text
+        run: |
+          # Set primary color of website to Flyte Pink
+          find cf-pages/ -type f -exec sed -i 's/#DE3358/#F37BDA/g' {} +
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
@@ -50,3 +49,4 @@ jobs:
           branch: master
           # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
           wranglerVersion: '3'
+
