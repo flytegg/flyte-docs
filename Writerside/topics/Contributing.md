@@ -57,9 +57,9 @@ To contribute to our projects, please follow these steps:
 1. Fork the repository.
 2. Create a new branch for your feature:
 
-```Bash
-git checkout -b scope/your-feature
-```
+    ```Bash
+    git checkout -b scope/your-feature
+    ```
 
 3. Make changes and write your code.
 4. Test the changes and ensure they are working correctly.
