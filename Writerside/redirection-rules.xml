@@ -6,48 +6,5 @@
         <accepts>page.html</accepts>
     </rule>
     -->
-    <rule id="6ffc6d14">
-        <description>Created after removal of "Overview" from API Docs</description>
-        <accepts>Overview.html</accepts>
-    </rule>
-    <rule id="673d4d69">
-        <description>Created after removal of "Authentification" from API Docs</description>
-        <accepts>Authentification.html</accepts>
-    </rule>
-    <rule id="4078eb73">
-        <description>Created after removal of "API Quickstart" from API Docs</description>
-        <accepts>API-quickstart-XML.html</accepts>
-    </rule>
-    <rule id="20d17971">
-        <description>Created after removal of "API Overview" from API Docs</description>
-        <accepts>API-Overview.html</accepts>
-    </rule>
-    <rule id="8146e1e">
-        <description>Created after removal of "Changes" from API Docs</description>
-        <accepts>Changes-XML.html</accepts>
-    </rule>
-    <rule id="5603b5be">
-        <description>Created after removal of "Status Endpoint" from Flyte Documentation</description>
-        <accepts>Status-Endpoint.html</accepts>
-    </rule>
-    <rule id="4efd8ca6">
-        <description>Created after removal of "User" from Flyte Documentation</description>
-        <accepts>User.html</accepts>
-    </rule>
-    <rule id="7807ec9f">
-        <description><![CDATA[Created after removal of "<Empty-MD-Topic.md>" from Flyte Documentation]]></description>
-        <accepts>Empty-MD-Topic.html</accepts>
-    </rule>
-    <rule id="630c4b6f">
-        <description>Created after removal of "Find pet inventories by status" from Flyte Documentation</description>
-        <accepts>Returns-pet-inventories-by-status.html</accepts>
-    </rule>
-    <rule id="4369d7d1">
-        <description>Created after removal of "Get Flyte service by ID" from Flyte Documentation</description>
-        <accepts>Get-Flyte-service-by-id.html</accepts>
-    </rule>
-    <rule id="76d5324e">
-        <description>Created after removal of "Hangar Wrapper" from Flyte Documentation</description>
-        <accepts>Hangar-Wrapper.html</accepts>
-    </rule>
+
 </rules>
