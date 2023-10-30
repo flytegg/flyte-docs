@@ -38,6 +38,7 @@ jobs:
         run: |
           # Set primary color of website to Flyte Pink
           find cf-pages/ -type f -exec sed -i 's/#DE3358/#F37BDA/g' {} +
+          # Remove the 
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1

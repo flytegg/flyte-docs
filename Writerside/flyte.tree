@@ -7,7 +7,11 @@
                  start-page="Home.md">
 
     <toc-element topic="Home.md"/>
-    <toc-element topic="Contributing.md"/>
+
+    <toc-element toc-title="Guidelines">
+        <toc-element topic="Contributing.md"/>
+    </toc-element>
+
     <toc-element topic="Flyte-API.md">
 
         <toc-element toc-title="Guilds Endpoint">
@@ -29,8 +33,6 @@
 
     </toc-element>
 
-    <toc-element topic="Other-Projects.md">
-
     <toc-element toc-title="Github Actions">
 
         <toc-element topic="Ptero-Build-Flow.md"/>
@@ -42,9 +44,7 @@
         <toc-element topic="Twilight.md"/>
     </toc-element>
 
-        <toc-element toc-title="Plugins">
-
-    </toc-element>
+    <toc-element toc-title="Plugins">
 
     </toc-element>
 </instance-profile>

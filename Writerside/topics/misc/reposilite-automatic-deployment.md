@@ -1,3 +1,0 @@
-# About Reposilite Automatic Deployment
-
-Start typing here...
