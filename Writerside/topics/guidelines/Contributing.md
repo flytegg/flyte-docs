@@ -36,7 +36,7 @@ just looking to the commit message.
 To write conventional commits, follow these best practices:
 
 - Use a clear and descriptive <description> in the imperative mood.
-  - Example: `feat(users): add user registration feature`
+  - Example: `feat(users): add registration feature`
 
 - Consider specifying a `<scope>` to provide context for larger 
 codebases or projects with multiple components.
@@ -57,9 +57,9 @@ To contribute to our projects, please follow these steps:
 1. Fork the repository.
 2. Create a new branch for your feature:
 
-```Bash
-git checkout -b scope/your-feature
-```
+    ```Bash
+    git checkout -b scope/your-feature
+    ```
 
 3. Make changes and write your code.
 4. Test the changes and ensure they are working correctly.
