@@ -35,7 +35,7 @@ just looking to the commit message.
 
 To write conventional commits, follow these best practices:
 
-Use a clear and descriptive <description> in the imperative mood.
+- Use a clear and descriptive <description> in the imperative mood.
   - Example: `feat(users): add registration feature`
 
 - Consider specifying a `<scope>` to provide context for larger 
