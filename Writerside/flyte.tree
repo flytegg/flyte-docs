@@ -25,12 +25,6 @@
             <toc-element topic="Patch-User.md"/>
             <toc-element topic="Delete-User.md"/>
         </toc-element>
-
-        <toc-element toc-title="Status Endpoints">
-            <toc-element topic="Get-Flyte-Services-Status.md"/>
-            <toc-element topic="Update-Service.md"/>
-        </toc-element>
-
     </toc-element>
 
     <toc-element toc-title="Github Actions">
