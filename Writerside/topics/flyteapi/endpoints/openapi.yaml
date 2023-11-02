@@ -84,36 +84,6 @@ paths:
         '401':
           description: Unauthorized
 
-  /status:
-    get:
-      summary: View status of all Flyte services.
-      description: View status of all Flyte services in one endpoint.
-      responses:
-        '200':
-          description: OK (Returns Array of Objects)
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/StatusCheck'
-        '401':
-          description: Unauthorized
-
-    post:
-      summary: Update status of a Flyte service.
-      description: Update status of a Flyte service.
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/StatusCheck'
-
-      responses:
-        '201':
-          description: Created
-        '401':
-          description: Unauthorized
-
 components:
   schemas:
     User:

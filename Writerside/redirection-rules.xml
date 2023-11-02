@@ -7,4 +7,8 @@
     </rule>
     -->
 
+    <rule id="12923cdf">
+        <description>Created after removal of "Endorsed Technologies" from Flyte Documentation</description>
+        <accepts>Endorsed-Technologies.html</accepts>
+    </rule>
 </rules>
