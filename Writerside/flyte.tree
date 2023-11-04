@@ -27,7 +27,7 @@
         </toc-element>
     </toc-element>
 
-    <toc-element toc-title="Github Actions">
+    <toc-element toc-title="GitHub Actions">
 
         <toc-element topic="Ptero-Build-Flow.md"/>
     </toc-element>
