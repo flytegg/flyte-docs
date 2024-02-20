@@ -12,23 +12,24 @@
         <toc-element topic="Contributing.md"/>
     </toc-element>
 
-    <toc-element topic="Flyte-API.md">
-
-        <toc-element toc-title="Guilds Endpoint">
+    <toc-element toc-title="APIs">
+        <toc-element toc-title="MC Utils API">
 
         </toc-element>
 
-        <toc-element toc-title="Users Endpoint">
+        <toc-element topic="Flyte-API.md">
 
-            <toc-element topic="Get-User.md"/>
-            <toc-element topic="Post-User.md"/>
-            <toc-element topic="Patch-User.md"/>
-            <toc-element topic="Delete-User.md"/>
+            <toc-element toc-title="Guilds Endpoint">
+
+            </toc-element>
+
+            <toc-element toc-title="Users Endpoint">
+                <toc-element topic="Get-User.md"/>
+                <toc-element topic="Post-User.md"/>
+                <toc-element topic="Patch-User.md"/>
+                <toc-element topic="Delete-User.md"/>
+            </toc-element>
         </toc-element>
-    </toc-element>
-
-    <toc-element toc-title="MC Utils API">
-
     </toc-element>
 
     <toc-element toc-title="GitHub Actions">
@@ -39,10 +40,18 @@
     <toc-element toc-title="Libraries">
 
         <toc-element topic="Neptune.md"/>
-        <toc-element topic="Twilight.md"/>
+        <toc-element topic="Twilight.md">
+
+            <toc-element topic="Getting-Started.md"/>
+            <toc-element toc-title="Databases">
+
+            </toc-element>
+        </toc-element>
     </toc-element>
 
     <toc-element toc-title="Plugins">
+        <toc-element toc-title="Plugin Portal">
 
+        </toc-element>
     </toc-element>
 </instance-profile>
