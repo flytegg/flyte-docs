@@ -24,7 +24,8 @@
         <li>JDK 21</li>
     </list>
 
-    <chapter title="Installment" id="installment">
+    <chapter title="Installation" id="installation">
+        <p>Add the Flyte repository and Twilight dependency to your build tool of choice.</p>
         <tabs>
             <tab title="Gradle (Kotlin)">
                 <code-block lang="kotlin">

@@ -5,14 +5,14 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Ternary Operator" id="Ternary-Operator">
 
-    <warning>
-        <p>This doesn't yet work for evaluating functions either side of the ternary though, we plan to figure this
-            out in the near future.</p>
-    </warning>
-
     <p>There is a basic ternary operator implementation added which can be used like so:</p>
     <code-block lang="kotlin">
         val test = false
         println(test then "yes" or "no")
     </code-block>
+
+    <warning>
+        <p>This doesn't yet work for evaluating functions either side of the ternary though, we plan to figure this
+            out in the near future.</p>
+    </warning>
 </topic>

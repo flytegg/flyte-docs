@@ -1,6 +1,6 @@
 # SQL (MySQL, Postgres)
 
-#### Getting Started
+#### Getting started
 To get started you need to create an instance of the SQL Wrapper like so
 ```kotlin
 val db = SQLWrapper(url = "your db url", user="user", password="password")

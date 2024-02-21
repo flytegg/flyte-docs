@@ -19,7 +19,7 @@
     </p>
 
     <p>
-        This is particularly useful when used in parallel with our other open-source library, resource-pack-deploy,
+        This is particularly useful when used in parallel with our other open-source library, <a href="https://github.com/flytegg/resource-pack-deploy">resource-pack-deploy</a>,
         so you can get the hash of the latest resource pack file, and use it to reset a client's cached version of your
         resource pack if there are any differences.
     </p>
