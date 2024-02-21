@@ -27,4 +27,12 @@
         <description>Created after removal of "Configuration" from Flyte Documentation</description>
         <accepts>Configuration.html</accepts>
     </rule>
+    <rule id="5a18717e">
+        <description>Created after removal of "MongoDB" from Flyte Documentation</description>
+        <accepts>MongoDB.html</accepts>
+    </rule>
+    <rule id="68dcf198">
+        <description>Created after removal of "SQL" from Flyte Documentation</description>
+        <accepts>SQL.html</accepts>
+    </rule>
 </rules>

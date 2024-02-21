@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Gson" id="Gson">
+
+    <warning>
+        <p>
+            Make sure to use our GSON import rather than making your own/own builder, as the Gson instance has to
+            declare the ExclusionStrategy.
+        </p>
+    </warning>
+
+    <p>
+        We're aiming to provide some standard GSON Type Adapters for ease of use. Currently, we have adapters for the
+        following:
+    </p>
+
+    <list>
+        <li>Location</li>
+        <li>ItemStack</li>
+    </list>
+
+    <p>
+        We have a useful exclusion strategy, allowing you to exclude marked fields of a class from being in serialized
+        JSON. All you need to do is annotate the class field with @Exclude!
+    </p>
+</topic>

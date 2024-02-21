@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Symbols" id="Symbols">
+
+
+    <p>Twilight offers a collection of widely used symbols within the Symbols object.</p>
+
+    <p>These include, but are not limited to:</p>
+    <list>
+        <li>• (BULLET)</li>
+        <li>❤ (HEART)</li>
+        <li>★ (STAR)</li>
+        <li>» (SMALL_RIGHT)</li>
+        <li>█ (SQUARE)</li>
+        <li>⬤ (CIRCLE)</li>
+        <li>⛏ (PICKAXE)</li>
+        <li>⛀ (COIN)</li>
+        <li>⛁ (COINS)</li>
+    </list>
+</topic>

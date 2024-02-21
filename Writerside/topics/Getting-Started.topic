@@ -9,7 +9,7 @@
         <p>Latest Version: %TWILIGHT_VERSION%</p>
         <p>Repo: <a href="https://repo.flyte.gg">Repository Link</a></p>
     </tldr>
-G
+
     <warning>
         <p>
             This library is built to be used with <a href="https://kotlinlang.org">Kotlin</a>. Many features of
@@ -114,5 +114,15 @@ G
         <p>
             Other features that can be configured in the Twilight class builder will have their own sections later in the README.
         </p>
+    </chapter>
+
+    <chapter title="Libraries" id="libraries">
+        <p>Twilight is bundled with some useful libraries, some include:</p>
+        <list>
+            <li>Bson</li>
+            <li><a href="https://github.com/cdimascio/dotenv-kotlin">dotenv-kotlin</a></li>
+            <li>Mongo Sync Driver</li>
+            <li>GSON</li>
+        </list>
     </chapter>
 </topic>

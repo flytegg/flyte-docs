@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="UUID ⟷ Name" id="UUID-⟷-Name">
+
+    <p>
+        Twilight can do the heavy lifting and query the Mojang API to find the UUID from name or name from UUID of a
+        player, particularly useful for networks. Twilight will cache responses in an attempt to not break the rate
+        limit imposed by Mojang.
+    </p>
+
+    <p>If you have a UUID and you want to get a name, you can call nameFromUUID:</p>
+    <code-block lang="kotlin">
+        NameCacheService.nameFromUUID(UUID.fromString("a008c892-e7e1-48e1-8235-8aa389318b7a"))
+    </code-block>
+
+    <p>
+        This will look up your cache to see if we already know the name, otherwise we will check the MongoDB "cache" of
+        key, value pairs, and finally, we'll query Mojang if we still don't know it.
+    </p>
+
+    <p>After each step the key, value pair will be stored so the next call is just on the cache.</p>
+
+    <p>Similarly, if you have a name and want to get the UUID, you can call uuidFromName:</p>
+    <code-block lang="kotlin">
+        NameCacheService.uuidFromName("Notch")
+    </code-block>
+
+    <p>
+        Currently, the only way to configure your MongoDB "cache" for UUIDs and names, is to have an Environment
+        variable called NAME_CACHE_COLLECTION with the value being what you want to call the collection. Don't want
+        to use the Mongo cache? Disable useMongoCache in the settings.
+    </p>
+
+</topic>

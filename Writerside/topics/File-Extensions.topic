@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="File Extensions" id="File-Extensions">
+
+    <p>
+        You can easily get the hash of a file using the method below. The parameter algorithm is used to define 
+        which should be used for the hash, the default is SHA-256.
+    </p>
+    <code-block lang="kotlin">
+        File.hash()
+    </code-block>
+
+    <p>
+        If you need to hold a reference to a file at a remote location you can use the RemoteFile class provided here.
+        This allows you to easily get the hash of a remote file with RemoteFile#hash.
+    </p>
+
+    <p>
+        This is particularly useful when used in parallel with our other open-source library, resource-pack-deploy,
+        so you can get the hash of the latest resource pack file, and use it to reset a client's cached version of your
+        resource pack if there are any differences.
+    </p>
+</topic>
