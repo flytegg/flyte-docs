@@ -4,9 +4,9 @@
 
 <instance-profile id="flyte"
                  name="Flyte Documentation"
-                 start-page="Home.md">
+                 start-page="Home.topic">
 
-    <toc-element topic="Home.md"/>
+    <toc-element topic="Home.topic"/>
 
     <toc-element toc-title="Guidelines">
         <toc-element topic="Contributing.md"/>

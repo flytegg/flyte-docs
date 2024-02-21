@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Home" id="Home">
+
+    <section-starting-page>
+        <title>Welcome to the Flyte Docs</title>
+
+        <description>
+            This is the official documentation for all Flyte tools and services. Here you will find everything you
+            need.
+        </description>
+
+        <spotlight>
+
+            <a href="https://discord.flyte.gg" type="community" summary="This is where we provide support and talk about future projects.">Join The discord</a>
+
+            <a href="https://flyte.gg" type="navigation"
+               summary="Our website provides useful information, links, statistics, and contact information.">
+                View our website
+            </a>
+        </spotlight>
+
+        <primary>
+            <title>First Steps</title>
+
+            <a href="Twilight.md" type="development" summary="Check out Twilight, our custom Kotlin PaperMC Library!"/>
+        </primary>
+
+        <misc>
+            <cards narrow="true">
+                <title>Relevant links</title>
+
+                <a href="https://discord.flyte/gg"
+                   type="community"
+                   summary="Talk about Flyte, get help, or suggest new projects.">Official Discord Server</a>
+
+                <a href="https://github.com/flytegg/" type="open-source" summary="Read the source code, report problems or contribute via Pull Request.">
+                    GitHub Page
+                </a>
+
+                <a href="https://github.com/flytegg/flyte-docs" type="server" summary="Help us in maintaining the documentation for Flyte.">
+                    Modify The Documentation
+                </a>
+            </cards>
+        </misc>
+    </section-starting-page>
+</topic>
