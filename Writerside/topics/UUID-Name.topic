@@ -3,7 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="UUID ⟷ Name" id="UUID-⟷-Name">
+       title="UUID ⟷ Name" id="UUID-Name">
 
     <p>
         Twilight can do the heavy lifting and query the Mojang API to find the UUID from name or name from UUID of a

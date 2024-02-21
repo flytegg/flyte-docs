@@ -50,7 +50,7 @@
                 <toc-element topic="Symbols.topic"/>
                 <toc-element topic="File-Extensions.topic"/>
                 <toc-element topic="Ternary-Operator.topic"/>
-                <toc-element topic="UUID-⟷-Name.topic"/>
+                <toc-element topic="UUID-Name.topic"/>
                 <toc-element topic="Events.topic">
                     <toc-element topic="Twilight-Events.topic"/>
                     <toc-element topic="Custom-Events.topic"/>
