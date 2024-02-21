@@ -43,11 +43,26 @@
         <toc-element topic="Twilight.md">
 
             <toc-element topic="Getting-Started.topic"/>
-            <toc-element toc-title="Databases">
 
+            <toc-element toc-title="Features">
+                <toc-element topic="Events.topic">
+                    <toc-element topic="Twilight-Events.topic"/>
+                    <toc-element topic="Custom-Events.topic"/>
+                </toc-element>
+                <toc-element topic="Scheduler.topic"/>
+                <toc-element toc-title="Databases">
+
+                </toc-element>
+
+                <toc-element toc-title="Extensions">
+
+                </toc-element>
+
+                <toc-element toc-title="Event System">
+
+                </toc-element>
             </toc-element>
         </toc-element>
-        <toc-element topic="Configuration.topic"/>
     </toc-element>
 
     <toc-element toc-title="Plugins">

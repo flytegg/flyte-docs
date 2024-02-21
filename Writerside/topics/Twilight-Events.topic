@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Twilight Events" id="Twilight-Events">
+
+    <p>Twilight provides additional events which are not found in Spigot or Paper. These are:</p>
+    <list>
+        <li>PlayerMainHandInteractEvent</li>
+        <li>PlayerOffHandInteractEvent</li>
+        <li>PlayerOpChangeEvent</li>
+        <li>PlayerOpEvent</li>
+        <li>PlayerDeopEvent</li>
+        <li>ChatClickEvent</li>
+    </list>
+
+    <p>You can opt out of Twilight calling these events. For example:</p>
+    <code-block lang="kotlin">
+        disableCustomEventListeners(OpEventListener, InteractEventListener)
+    </code-block>
+
+    <chapter title="ChatClickEvent" id="chat_click_event">
+        <p>
+            Due to limitations imposed by the Minecraft server software, when interacting with a clickable message in
+            chat or in a book the only response options are RUN_COMMAND, SUGGEST_COMMAND, CHANGE_PAGE,
+            COPY_TO_CLIPBOARD, OPEN_FILE and OPEN_URL. None of these match the most common use case:
+            running custom code. Twilight utilizes the RUN_COMMAND response to call a custom ChatClickEvent which can
+            be listened to like a regular event.
+        </p>
+
+        <p>
+            To use this feature, where you would normally build your clickable message, use the Twilight extension
+            functions to add a custom click event. Twilight will then redirect any data which you put in the parameters
+            to be accessible as a variable from within the ChatClickEvent when the player clicks the message.
+        </p>
+
+        <p>For Paper/Adventure (recommended):</p>
+        <code-block lang="kotlin">
+            import net.kyori.adventure.text.Component
+
+            Component.text("Click here")
+                .customClickEvent("openGUI", "warps")
+        </code-block>
+
+        <p>For Spigot/BungeeCord:</p>
+        <code-block lang="kotlin">
+            import net.md_5.bungee.api.chat.TextComponent
+
+            TextComponent("Click here")
+                .customClickEvent("openGUI", "warps")
+        </code-block>
+
+        <p>
+            From there, simply listen to the event as normal, and access the data attached to the message the player has
+            clicked. In this basic example, information to open a "warps" GUI has been passed through as the custom
+            data, and so the correct action can be taken:
+        </p>
+        <code-block lang="kotlin">
+            event&lt;ChatClickEvent&gt; {
+                if (data.size != 2) return@event
+                if (data[0] != "openGUI") return@event
+                when (data[1]) {
+                    "warps" -> GUIManager.openWarps(player)
+                        ..
+                }
+            }
+
+        </code-block>
+    </chapter>
+</topic>

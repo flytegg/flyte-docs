@@ -95,5 +95,24 @@ G
 
         <p>The above are default env settings, though the values can be changed.</p>
 
+        <p>If you useDifferentEnvironments, you'll need a .env file which contains the following:</p>
+        <code-block lang="generic">
+            ENVIRONMENT=DEV # or PROD
+        </code-block>
+
+        <p>This file determines whether to use your dev .env or your prod .env.</p>
+
+        <p>
+            If you do not use this different environments feature, then it will just use the .env (or whatever you
+            specify the name as with prodEnvFileName)
+        </p>
+
+        <p>
+            Throughout your project you can use Environment.get("VARIABLE") to retrieve a value from your environment variables.
+        </p>
+
+        <p>
+            Other features that can be configured in the Twilight class builder will have their own sections later in the README.
+        </p>
     </chapter>
 </topic>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Events" id="Events" help-id="Events">
+
+    <p>
+        Twilight has a short method of creating events which automatically register. We personally use this method in
+        the Kotlin <format style="bold">init {}</format> method.
+    </p>
+
+    <p>You can make use of it like so:</p>
+    <code-block lang="kotlin">
+        event&lt;PlayerJoinEvent&gt; {
+            player.sendMessage("Welcome to the server!")
+        }
+    </code-block>
+
+    <p>The function also provides more arguments which are optional which are shown below:</p>
+    <code-block lang="kotlin">
+        // "true" is the ignoreCancelled argument
+        event&lt;PlayerJoinEvent&gt;(EventPriority.HIGHEST, true) {
+            player.sendMessage("Welcome to the server!")
+        }
+    </code-block>
+
+    <p>
+        If you ever need an instance of the Listener class that
+        the event gets put in to, it's returned by the function.
+        Specifically, it returns <format style="bold">TwilightListener</format>.
+        This class has a convenience function in for unregistering the listener,
+        it can be used like so:
+    </p>
+    <code-block lang="kotlin">
+        val listener = event&lt;PlayerJoinEvent&gt; {
+            player.sendMessage("Welcome to the server!")
+        }
+
+        listener.unregister()
+    </code-block>
+</topic>

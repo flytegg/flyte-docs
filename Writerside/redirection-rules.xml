@@ -23,4 +23,8 @@
         <description>Created after removal of "Getting Started" from Flyte Documentation</description>
         <accepts>Getting-Started.html</accepts>
     </rule>
+    <rule id="59ab6970">
+        <description>Created after removal of "Configuration" from Flyte Documentation</description>
+        <accepts>Configuration.html</accepts>
+    </rule>
 </rules>
