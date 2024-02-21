@@ -1,6 +1,6 @@
 # Ptero Build Flow
 
-[Github Repository](https://github.com/flytegg/ptero-build-flow)
+[GitHub Repository](https://github.com/flytegg/ptero-build-flow)
 
 ## Information
 

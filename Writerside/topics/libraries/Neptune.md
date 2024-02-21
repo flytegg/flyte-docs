@@ -1,8 +1,7 @@
 # Neptune
 
-[Github Repository](https://github.com/flytegg/neptune)
+[GitHub Repository](https://github.com/flytegg/neptune)
 
-## Information
 An annotation-based slash command framework for JDA.
 
 ## How to Use
@@ -95,18 +94,18 @@ Maven
 <dependency>
     <groupId>gg.flyte</groupId>
     <artifactId>neptune</artifactId>
-    <version>VERSION</version>
+    <version>%NEPTUNE_VERSION%</version>
 </dependency>
 ```
 
 Gradle (Kotlin DSL)
-```Kotlin
+```kt
 maven {
     name = "flyteRepositoryReleases"
     url = uri("https://repo.flyte.gg/releases")
 }
         
-implementation("gg.flyte:neptune:VERSION")
+implementation("gg.flyte:neptune:%NEPTUNE_VERSION%")
 ```  
 
 ## Contributing

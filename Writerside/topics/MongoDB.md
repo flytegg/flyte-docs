@@ -12,7 +12,7 @@ MONGO_DATABASE="your database name"
 
 #### Builder
 When building your Twilight instance, you can specify your URI and database like so:
-```kotlin
+```Kotlin
 val twilight = twilight(plugin) {
     mongo {
         uri = "your URI string"
@@ -22,7 +22,7 @@ val twilight = twilight(plugin) {
 ```
 
 From here you can use the following function to get a collection from your database:
-```kotlin
+```Kotlin
 MongoDB.collection("my-collection")
 ```
 And use the standard features of the Mongo Sync Driver with your `MongoCollection`.

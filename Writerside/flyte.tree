@@ -34,6 +34,7 @@
 
     <toc-element toc-title="GitHub Actions">
 
+        <toc-element topic="Resource-Pack-Deploy.md"/>
         <toc-element topic="Ptero-Build-Flow.md"/>
     </toc-element>
 
