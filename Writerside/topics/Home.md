@@ -37,7 +37,7 @@ You can use it as a sandbox to play with Writerside features, and remove it from
 </tr>
 
 <tr>
-    <td><a href="Get-Flyte-Services-Status.md">Flyte Guidelines</a></td>
+     <td>Flyte Guidelines</td>
     <td>
     <list>
     <li>

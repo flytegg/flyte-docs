@@ -19,4 +19,8 @@
         <description>Created after removal of "Internal" from Flyte Documentation</description>
         <accepts>Internal.html</accepts>
     </rule>
+    <rule id="1776284e">
+        <description>Created after removal of "Getting Started" from Flyte Documentation</description>
+        <accepts>Getting-Started.html</accepts>
+    </rule>
 </rules>

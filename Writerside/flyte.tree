@@ -42,11 +42,12 @@
         <toc-element topic="Neptune.md"/>
         <toc-element topic="Twilight.md">
 
-            <toc-element topic="Getting-Started.md"/>
+            <toc-element topic="Getting-Started.topic"/>
             <toc-element toc-title="Databases">
 
             </toc-element>
         </toc-element>
+        <toc-element topic="Configuration.topic"/>
     </toc-element>
 
     <toc-element toc-title="Plugins">

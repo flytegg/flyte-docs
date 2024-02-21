@@ -3,48 +3,9 @@
 
 Twilight is an API for developers creating plugins for Spigot or Paper based Minecraft servers. It contains a wide range of utilities and QOL improvements, from inventories, to schedulers and databases.
 
-Twilight is built using **Kotlin**, and is recommended for usage with. Many features of Twilight should work with plain Java, though compatibility is not guaranteed.
+Twilight is built using **Kotlin**, and is recommended for usage with.
 
-If you have any questions or need any support, head over to the [Flyte Discord](https://discord.gg/CGmMQwfXXN)!
-
-## Setup
-Twilight should be bundled within your plugin. Add the following repository and dependency to your build tool:
-
-Maven
-```xml
-<repository>
-    <id>flyte-repository-releases</id>
-    <name>Flyte Repository</name>
-    <url>https://repo.flyte.gg/releases</url>
-</repository>
-
-<dependency>
-    <groupId>gg.flyte</groupId>
-    <artifactId>twilight</artifactId>
-    <version>1.1.7</version>
-</dependency>
-```
-
-Gradle (Groovy DSL)
-```groovy
-maven {
-    url "https://repo.flyte.gg/releases"
-}
-
-implementation "gg.flyte:twilight:1.1.7"
-```
-
-Gradle (Kotlin DSL)
-```kotlin
-maven("https://repo.flyte.gg/releases")
-
-implementation("gg.flyte:twilight:1.1.7")
-```
-
-Certain features of Twilight require configuration, which can be done via the Twilight class. To setup a Twilight class instance, you can use the `twilight` function as shown below:
-```kotlin
-val twilight = twilight(this)
-```
+If you have any questions or need any support, head over to the [Flyte Discord](https://discord.flyte.gg)!
 
 If you want to make use of environment variables (.env files), you can configure your usage of these here, like so:
 ```kotlin

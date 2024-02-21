@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Getting Started" id="Getting-Started">
+
+    <tldr>
+        <p>Latest Version: %TWILIGHT_VERSION%</p>
+        <p>Repo: <a href="https://repo.flyte.gg">Repository Link</a></p>
+    </tldr>
+G
+    <warning>
+        <p>
+            This library is built to be used with <a href="https://kotlinlang.org">Kotlin</a>. Many features of
+            Twilight should work with plain Java, though compatibility is not guaranteed.
+        </p>
+    </warning>
+
+    <p>Recommended Tools:</p>
+    <list>
+        <li><a href="https://papermc.io/">PaperMC %LATEST_PAPER_VERSION%</a></li>
+        <li><a href="https://kotlinlang.org">Kotlin</a></li>
+        <li>JDK 21</li>
+    </list>
+
+    <chapter title="Installment" id="installment">
+        <tabs>
+            <tab title="Gradle (Kotlin)">
+                <code-block lang="kotlin">
+                    repositories {
+                        maven("https://repo.flyte.gg/releases")
+                    }
+
+                    dependencies {
+                        implementation("gg.flyte:twilight:%TWILIGHT_VERSION%")
+                    }
+                </code-block>
+            </tab>
+            <tab title="Gradle (Groovy)">
+                <code-block lang="groovy">
+                    repositories {
+                        maven {
+                            url "https://repo.flyte.gg/releases"
+                        }
+                    }
+
+                    dependencies {
+                        implementation("gg.flyte:twilight:%TWILIGHT_VERSION%")
+                    }
+                </code-block>
+            </tab>
+            <tab title="Maven">
+                <code-block lang="xml">
+                    &lt;repositories&gt;
+                        &lt;!-- ... --&gt;
+
+                        &lt;repository&gt;
+                            &lt;id&gt;flyte-repository-release&lt;/id&gt;
+                            &lt;name&gt;Flyte Repository&lt;/name&gt;
+                            &lt;url&gt;https://repo.flyte.gg/releases&lt;/url&gt;
+                        &lt;/repository&gt;
+                    &lt;/repositories&gt;
+
+                    &lt;dependencies&gt;
+                        &lt;!-- ... --&gt;
+
+                        &lt;dependency&gt;
+                            &lt;groupId&gt;gg.flyte&lt;/groupId&gt;
+                            &lt;artifactId&gt;twilight&lt;/artifactId&gt;
+                            &lt;version&gt;%TWILIGHT_VERSION%&lt;/version&gt;
+                        &lt;/dependency&gt;
+                    &lt;/dependencies&gt;
+                </code-block>
+            </tab>
+        </tabs>
+    </chapter>
+
+    <chapter title="Configuration" id="configuration">
+        <p>Certain features require configuration, which can be done via the Twilight class. To setup a Twilight class instance, you can use the <format style="bold" color="White">twilight</format> function shown below:</p>
+
+        <code-block lang="kotlin">
+            // This will use all default configurations
+            val twilight = twilight(this)
+
+            // This will use default configurations, unless specified
+            val twilight = twilight(this) {
+                env {
+                    useDifferentEnvironments = true
+                    devEnvFileName = ".env.dev"
+                    prodEnvFileName = ".env.prod"
+                }
+            }
+        </code-block>
+
+        <p>The above are default env settings, though the values can be changed.</p>
+
+    </chapter>
+</topic>
